@@ -6,6 +6,7 @@ import {
   DonutLarge,
   MoreVert,
   SearchOutlined,
+  Unsubscribe,
 } from "@mui/icons-material";
 import { SidebarChat } from "./SidebarChat";
 import db from "./firebase";
@@ -20,6 +21,9 @@ function Sidebar() {
         }))
       )
     );
+    return () =>{
+      Unsubscribe()
+    }
   }, []);
 
   return (
